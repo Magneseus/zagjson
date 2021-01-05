@@ -1,0 +1,30 @@
+{
+    "name": "zagjson",
+    "displayName": "ZagJson",
+    "description": "Simple JSON syntax highlighting.",
+    "version": "0.0.1",
+    "author": {
+        "name": "Matt Mayer",
+        "email": "matt.bmayer@gmail.com"
+    },
+    "license": "SEE LICENSE IN /LICENSE",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "sjson",
+            "aliases": ["SJSON", "sjson"],
+            "extensions": [".sjson"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "sjson",
+            "scopeName": "source.sjson",
+            "path": "./syntaxes/sjson.tmLanguage.json"
+        }]
+    }
+}
